@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MagicHelper"
-             x:Class="MagicHelper.MainPage">
+             x:Class="MagicHelper.MainPage"
+             BackgroundColor="DarkViolet">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+    <StackLayout>
+        <Label Text="Welcome to Magic Helper!" 
+            Margin="0,100,0,0"
+           TextColor="White"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
+        <Button Text="Go to cards gallery"
+                Margin="0,100,0,0"
+            Clicked="OnGalleryButtonClicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+    </StackLayout>
 </ContentPage>

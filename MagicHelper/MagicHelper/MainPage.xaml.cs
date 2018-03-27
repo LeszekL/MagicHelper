@@ -13,5 +13,10 @@ namespace MagicHelper
 		{
 			InitializeComponent();
 		}
-	}
+
+        public void OnGalleryButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushModalAsync(new CardsGalleryPage());
+        }
+    }
 }
