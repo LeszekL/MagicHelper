@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MagicHelper.MainPage"
-             BackgroundColor="DarkViolet">
+             BackgroundColor="DarkBlue">
 
     <StackLayout>
         <Label Text="Welcome to Magic Helper!" 
@@ -14,6 +14,12 @@
         <Button Text="Go to cards gallery"
                 Margin="0,100,0,0"
             Clicked="OnGalleryButtonClicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+        <Button Text="Go to cards list gallery"
+                Margin="0,100,0,0"
+            Clicked="OnGalleryListButtonClicked"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
     </StackLayout>

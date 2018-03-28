@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using MagicHelper.Models;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MagicHelper
+namespace MagicHelper.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CardsGalleryPage : ContentPage

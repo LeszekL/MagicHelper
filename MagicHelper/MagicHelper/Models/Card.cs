@@ -1,4 +1,4 @@
-﻿namespace MagicHelper
+﻿namespace MagicHelper.Models
 {
     public class Card
     {
@@ -65,6 +65,14 @@
             set
             {
                 _flavorText = value;
+            }
+        }
+
+        public string ImageSource
+        {
+            get
+            {
+                return "Shots/" + Name + ".jpg";
             }
         }
     }
