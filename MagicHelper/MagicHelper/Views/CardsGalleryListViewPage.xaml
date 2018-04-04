@@ -15,7 +15,6 @@
     </ListView.ItemTemplate>-->
     
     <!--Custom View Cells-->
-    
     <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell>

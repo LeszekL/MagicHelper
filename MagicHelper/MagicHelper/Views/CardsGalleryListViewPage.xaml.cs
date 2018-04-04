@@ -1,11 +1,6 @@
 ﻿using MagicHelper.Models;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -31,17 +26,17 @@ namespace MagicHelper.Views
                 new Card() { Name = "Firestorm" },
                 new Card() { Name = "Hour of Devastation" },
                 new Card() { Name = "Incinerate" },
-                new Card() { Name = "Insult Injury" },
+                new Card() { Name = "Insult Injury" , ImageSource = "Shots/Insult Injury.png" },
                 new Card() { Name = "Izzet Charm" },
-                new Card() { Name = "Lighting Bolt" },
-                new Card() { Name = "Lighting Helix" },
-                new Card() { Name = "Lighting Strike" },
+                new Card() { Name = "Lightning Bolt" },
+                new Card() { Name = "Lightning Helix" },
+                new Card() { Name = "Lighting Strike", ImageSource = "Shots/Lightning Strike.png" },
                 new Card() { Name = "Magma Spray" },
                 new Card() { Name = "Rakdos's Return" },
-                new Card() { Name = "Rolling Earthquake" },
+                new Card() { Name = "Rolling Earthquake", ImageSource = "Shots/Rolling Earthquake.png" },
                 new Card() { Name = "Searing Spear" },
                 new Card() { Name = "Slagstorm" },
-                new Card() { Name = "Smash to Smithereens" },
+                new Card() { Name = "Smash to Smithereens", ImageSource = "Shots/Smash to Smithereens.png" },
                 new Card() { Name = "Turn Burn" },
                 new Card() { Name = "Wildfire" },
             };
@@ -53,7 +48,7 @@ namespace MagicHelper.Views
 
             string type1 = "Type of the Plainswalker " + cards[0].GetType();
             string type2 = "Type of the Creature " + cards[1].GetType();
-            
+
             MyListView.ItemsSource = Items;
         }
 

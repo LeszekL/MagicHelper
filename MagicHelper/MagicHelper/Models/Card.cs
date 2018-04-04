@@ -2,77 +2,29 @@
 {
     public class Card
     {
-        private int _convertedManaCost;
-        private string _name;
-        private CardType _cardType;
-        private string _cardText;
-        private string _flavorText;
+        private string _imageSource;
 
-        public int ConvertedManaCost
-        {
-            get
-            {
-                return _convertedManaCost;
-            }
-            set
-            {
-                _convertedManaCost = value;
-            }
-        }
+        public string Name { get; set; }
 
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                _name = value;
-            }
-        }
+        public int ConvertedManaCost { get; set; }
+        
+        public string CardText { get; set; }
 
-        public CardType CardType
-        {
-            get
-            {
-                return _cardType;
-            }
-            set
-            {
-                _cardType = value;
-            }
-        }
-
-        public string CardText
-        {
-            get
-            {
-                return _cardText;
-            }
-            set
-            {
-                _cardText = value;
-            }
-        }
-
-        public string FlavorText
-        {
-            get
-            {
-                return _flavorText;
-            }
-            set
-            {
-                _flavorText = value;
-            }
-        }
+        public string FlavorText { get; set; }
 
         public string ImageSource
         {
             get
             {
-                return "Shots/" + Name + ".jpg";
+                if (string.IsNullOrEmpty(_imageSource))
+                {
+                    return "Shots/" + Name + ".jpg";
+                }
+                return _imageSource;
+            }
+            set
+            {
+                _imageSource = value;
             }
         }
     }
