@@ -1,4 +1,5 @@
 ﻿using MagicHelper.Models;
+using MagicHelper.ViewModels;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
@@ -14,6 +15,8 @@ namespace MagicHelper.Views
         public CardsGalleryListViewPage()
         {
             InitializeComponent();
+
+            //BindingContext = new CardsGalleryListViewModel();
 
             Items = new ObservableCollection<Card>
             {

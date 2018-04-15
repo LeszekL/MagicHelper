@@ -5,20 +5,24 @@
              BackgroundColor="DarkBlue">
 
     <StackLayout>
-        <Label Text="Welcome to Magic Helper!" 
+        <Label 
+            Text="{Binding WelcomeText}" 
             Margin="0,100,0,0"
-           TextColor="White"
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+            TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 
-        <Button Text="Go to cards gallery"
-                Margin="0,100,0,0"
+        <Button 
+            Text="{Binding GaleryButtonText}" 
+            Command="{Binding GoToGalleryCommand}"
+            Margin="0,100,0,0"
             Clicked="OnGalleryButtonClicked"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
 
-        <Button Text="Go to cards list gallery"
-                Margin="0,100,0,0"
+        <Button 
+            Text="{Binding CardsListButtonText}" 
+            Margin="0,100,0,0"
             Clicked="OnGalleryListButtonClicked"
             HorizontalOptions="Center"
             VerticalOptions="Center" />

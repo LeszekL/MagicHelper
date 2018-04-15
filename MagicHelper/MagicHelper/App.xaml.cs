@@ -13,7 +13,7 @@ namespace MagicHelper
 		{
 			InitializeComponent();
 
-			MainPage = new MagicHelper.MainPage();
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()

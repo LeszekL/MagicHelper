@@ -1,4 +1,5 @@
-﻿using MagicHelper.Views;
+﻿using MagicHelper.ViewModels;
+using MagicHelper.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace MagicHelper
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainPageViewModel();
         }
 
         public void OnGalleryButtonClicked(object sender, EventArgs args)
