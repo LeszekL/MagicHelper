@@ -16,7 +16,6 @@
             Text="{Binding GaleryButtonText}" 
             Command="{Binding GoToGalleryCommand}"
             Margin="0,100,0,0"
-            Clicked="OnGalleryButtonClicked"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
 

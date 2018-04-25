@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MagicHelper.Views.CardsGalleryListViewPage">
   <ListView x:Name="MyListView"
-            ItemsSource="{Binding Items}"
+            ItemsSource="{Binding Cards}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
             

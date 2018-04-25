@@ -1,10 +1,6 @@
 ﻿using MagicHelper.ViewModels;
 using MagicHelper.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace MagicHelper
@@ -16,11 +12,6 @@ namespace MagicHelper
             InitializeComponent();
 
             BindingContext = new MainPageViewModel();
-        }
-
-        public void OnGalleryButtonClicked(object sender, EventArgs args)
-        {
-            Navigation.PushModalAsync(new CardsGalleryPage());
         }
 
         public void OnGalleryListButtonClicked(object sender, EventArgs args)
