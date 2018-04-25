@@ -1,32 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MagicHelper.ViewCells;assembly=MagicHelper"
              x:Class="MagicHelper.Views.CardsGalleryListViewPage">
   <ListView x:Name="MyListView"
             ItemsSource="{Binding Cards}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
             
-    <!--Built in Cells-->
-    <!--<ListView.ItemTemplate>
-        <DataTemplate>
-            <TextCell Text="{Binding .}" />
-        </DataTemplate>
-    </ListView.ItemTemplate>-->
-    
-    <!--Custom View Cells-->
     <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <StackLayout
-              Orientation="Horizontal"
-              Margin="0,10,0,0">
-            <Image HeightRequest="200" WidthRequest="100" Source="{Binding ImageSource}}" />
-            <Label TextColor="Red" Text="{Binding Name}" />
-        </StackLayout>
-        </ViewCell>
-      </DataTemplate>
+        <DataTemplate>
+            <local:CardListViewCell />
+        </DataTemplate>
     </ListView.ItemTemplate>
-    
-  </ListView>
+
+    </ListView>
 </ContentPage>
