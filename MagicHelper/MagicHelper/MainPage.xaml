@@ -13,13 +13,6 @@
             HorizontalOptions="Center" />
 
         <Button 
-            Text="{Binding GaleryButtonText}" 
-            Command="{Binding GoToGalleryCommand}"
-            Margin="0,100,0,0"
-            HorizontalOptions="Center"
-            VerticalOptions="Center" />
-
-        <Button 
             Text="{Binding CardsListButtonText}" 
             Margin="0,100,0,0"
             Clicked="OnGalleryListButtonClicked"

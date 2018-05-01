@@ -4,10 +4,12 @@
           x:Class="MagicHelper.ViewCells.CardListViewCell">
     <ViewCell.View>
         <StackLayout
-          Orientation="Horizontal"
-          HeightRequest="100">
-            <Image HeightRequest="100" WidthRequest="50" Source="{Binding ImageSource}}" />
-            <Label TextColor="Red" Text="{Binding Name}" />
+            BackgroundColor="LightGray"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal">
+            <Image Margin="10,5,10,5" Source="{Binding ImageSource}}" />
+            <Label VerticalOptions="Center" FontSize="Medium" TextColor="Red" Text="{Binding Name}" />
         </StackLayout>
     </ViewCell.View>
 </ViewCell>

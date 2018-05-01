@@ -6,13 +6,14 @@
   <ListView x:Name="MyListView"
             ItemsSource="{Binding Cards}"
             ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
+            CachingStrategy="RecycleElement"
+            RowHeight="100">
             
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <local:CardListViewCell />
-        </DataTemplate>
-    </ListView.ItemTemplate>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <local:CardListViewCell />
+            </DataTemplate>
+        </ListView.ItemTemplate>
 
     </ListView>
 </ContentPage>

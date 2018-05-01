@@ -40,8 +40,6 @@ namespace MagicHelper.ViewModels
             }
         }
 
-        public ICommand GoToGalleryCommand { get; set; }
-
         public ICommand GoToGalleryListCommand { get; set; }
 
 

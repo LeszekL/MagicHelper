@@ -21,6 +21,8 @@ namespace MagicHelper.Views
             //CrossDeviceOrientation.Current.LockOrientation(DeviceOrientations.Portrait);
 
             //image.Source = passedCard.ImageSource;
+
+            singleCardCarousel.ItemsSource = 
         }
     }
 }
