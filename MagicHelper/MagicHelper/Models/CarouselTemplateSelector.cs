@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MagicHelper.Views;
+using Xamarin.Forms;
 
 namespace MagicHelper.Models
 {
@@ -10,18 +11,23 @@ namespace MagicHelper.Models
         public DataTemplate InformationTemplate { get; set; }
         public DataTemplate RulingTemplate { get; set; }
 
+        public CarouselTemplateSelector()
+        {
+            
+        }
+
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
             switch (CreatedPagesCounter)
             {
                 case 1:
                     CreatedPagesCounter++;
-                    return InformationTemplate;
+                    return InformationTemplate = new DataTemplate(typeof(CarouselInformationView));
                 case 2:
                     CreatedPagesCounter = 0;
-                    return RulingTemplate;
+                    return RulingTemplate = new DataTemplate(typeof(CarouselRulingView));
             }
-            return ImageTemplate;
+            return ImageTemplate = new DataTemplate(typeof(CarouselImageView));
         }
     }
 }

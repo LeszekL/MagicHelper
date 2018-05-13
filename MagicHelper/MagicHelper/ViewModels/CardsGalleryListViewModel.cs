@@ -32,8 +32,8 @@ namespace MagicHelper.ViewModels
         {
             return new List<Card>()
             {
-                new Card() { Name = "Bolt of Lightning", ConvertedManaCost = 1 },
-                new Card() { Name = "Boros Charm", ConvertedManaCost = 2 },
+                new Card() { Name = "Bolt of Lightning", ImageSource = "Shots/Bolt of Lightning.jpg", ConvertedManaCost = 1 },
+                new Card() { Name = "Boros Charm", ImageSource = "Shots/Boros Charm.jpg", ConvertedManaCost = 2 },
                 new Card() { Name = "Char", ConvertedManaCost = 3 },
                 new Card() { Name = "Electrolyze", ConvertedManaCost = 3 },
                 new Card() { Name = "Fire Ice" },

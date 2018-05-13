@@ -12,20 +12,22 @@
 
         public string FlavorText { get; set; }
 
-        public string ImageSource
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(_imageSource))
-                {
-                    return "Shots/" + Name + ".jpg";
-                }
-                return _imageSource;
-            }
-            set
-            {
-                _imageSource = value;
-            }
-        }
+        public string ImageSource { get; set; }
+
+        //public string ImageSource
+        //{
+        //    get
+        //    {
+        //        if (string.IsNullOrEmpty(_imageSource))
+        //        {
+        //            return "Shots/" + Name + ".jpg";
+        //        }
+        //        return _imageSource;
+        //    }
+        //    set
+        //    {
+        //        _imageSource = value;
+        //    }
+        //}
     }
 }
